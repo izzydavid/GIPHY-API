@@ -6,7 +6,7 @@ $(".nav-item").on("click", function() {
 
     // Constructing a queryURL using the anime name
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-      anime + "&api_key=Qxpp4x5d7fMc17qfyggEeDXHcJFmzIWO&limit=1";
+      anime + "&api_key=Qxpp4x5d7fMc17qfyggEeDXHcJFmzIWO&limit=10";
 
     // Performing an AJAX request with the queryURL
     $.ajax({
@@ -27,7 +27,7 @@ $(".nav-item").on("click", function() {
           var animeDiv = $("<div>");
 
           // Creating a paragraph tag with the result item's rating
-          var p = $("<p>").text("" + results[i].title)
+          var p = $("<p>").text("Ratings " + results[i].rating)
            
 
           // Creating and storing an image tag
