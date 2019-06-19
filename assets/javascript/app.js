@@ -28,35 +28,47 @@ $(".nav-item").on("click", function() {
 
           // Creating a paragraph tag with the result item's rating
           var p = $("<p>").text("Ratings " + results[i].rating)
-           
+    
 
           // Creating and storing an image tag
           var animeImage = $("<img>");
           // Setting the src attribute of the image to a property pulled off the result item
-          animeImage.attr("src", results[i].images.fixed_height.url);
 
+          animeImage.attr("src", results[i].images.fixed_height_still.url);
           // Appending the paragraph and image tag to the animeDiv
           animeDiv.append(p);
           animeDiv.append(animeImage);
 
-       
+    
           // Prependng the animeDiv to the HTML page in the "#gifs-appear-here" div
           $(".card-body").prepend(animeDiv)
         }
+
+        $("<img>").on("click", function() {
+          // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
+          
+          var still = newFunction(results, i);
+          var animate = newFunction_1(results, i); 
+          // If the clicked image's state is still, update its src attribute to what its data-animate value is.
+          // Then, set the image's data-state to animate
+          // Else set src to the data-still value
+          if (still === still) { $(still).attr("src", (animate));
+          } else if (still === animate)  
+            newFunction_2(animate, still);
+
+        }); 
       });
-      $(".gif").on("click", function() {
-        // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
-        var state = $(this).attr("data-state");
-        // If the clicked image's state is still, update its src attribute to what its data-animate value is.
-        // Then, set the image's data-state to animate
-        // Else set src to the data-still value
-        if (state === "still") {
-          $(this).attr("src", $(this).attr("data-animate"));
-          $(this).attr("data-state", "animate");
-        } else {
-          $(this).attr("src", $(this).attr("data-still"));
-          $(this).attr("data-state", "still");
-        }
+
       });
-  });
+function newFunction_2(animate, still) {
+  $(animate).attr("src", (still));
+}
+
+function newFunction_1(results, i) {
+  return $(results[i].images.looping);
+}
+
+function newFunction(results, i) {
+  return $(results[i].images.fixed_height_still.url);
+}
 
