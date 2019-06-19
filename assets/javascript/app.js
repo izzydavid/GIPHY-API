@@ -41,7 +41,8 @@ $(".nav-item").on("click", function() {
 
        
           // Prependng the animeDiv to the HTML page in the "#gifs-appear-here" div
-          $("#gifs-appear-here").prepend(animeDiv);
+          $(".card-body").prepend(animeDiv)
+
         }
       });
       $(".gif").on("click", function() {
