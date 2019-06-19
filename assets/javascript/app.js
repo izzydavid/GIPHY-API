@@ -6,7 +6,7 @@ $(".nav-item").on("click", function() {
 
     // Constructing a queryURL using the anime name
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-      anime + "&api_key=Qxpp4x5d7fMc17qfyggEeDXHcJFmzIWO&limit=10";
+      anime + "&api_key=Qxpp4x5d7fMc17qfyggEeDXHcJFmzIWO&limit=1";
 
     // Performing an AJAX request with the queryURL
     $.ajax({
@@ -16,7 +16,6 @@ $(".nav-item").on("click", function() {
       // After data comes back from the request
       .then(function(response) {
         console.log(queryURL);
-
         console.log(response);
         // storing the data from the AJAX request in the results variable
         var results = response.data;
@@ -28,7 +27,8 @@ $(".nav-item").on("click", function() {
           var animeDiv = $("<div>");
 
           // Creating a paragraph tag with the result item's rating
-          var p = $("<p>").text("Rating: " + results[i].rating);
+          var p = $("<p>").text("" + results[i].title)
+           
 
           // Creating and storing an image tag
           var animeImage = $("<img>");
@@ -42,7 +42,6 @@ $(".nav-item").on("click", function() {
        
           // Prependng the animeDiv to the HTML page in the "#gifs-appear-here" div
           $(".card-body").prepend(animeDiv)
-
         }
       });
       $(".gif").on("click", function() {
