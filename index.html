@@ -1,33 +1,90 @@
 <!DOCTYPE html>
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Anime Buttons</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
-        <!-- Font Awesome CSS Icons (For cool glyphicons) -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
-      
-        <link rel="stylesheet" href="../GIPHY-API/assets/css/style.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Anime Buttons</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+    <!-- Font Awesome CSS Icons (For cool glyphicons) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="../GIPHY-API/assets/css/style.css">
+</head>
 
 
-    <body>
-      <button data-name="cowboy bepop">Bepop</button>
-      <button data-name="my neighbor totoro">Totoro</button>
-      <button data-name="death note">Death Note</button>
-      <button data-name="trigun">Trigun</button>
-      <div id="gifs-appear-here"> </div>
-    
-   <p> </p>
-        
-    </body>
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
-    <!-- Code to the JavaScript File -->
-    <script src="../GIPHY-API/assets/javascript/app.js"></script>
+<body>
+
+    <!-- Begining of Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Anime Shows</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item" data-name="cowboy bepop">
+                    <a class="nav-link" href="#">Bepop <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item" data-name="my neighbor totoro">
+                    <a class="nav-link" href="#">Totoro</a>
+                </li>
+                <li class="nav-item" data-name="death note">
+                    <a class="nav-link" href="#" aria-haspopup="true" aria-expanded="false">Death Note </a>
+                </li>
+                <li class="nav-item" data-name="trigun">
+                    <a class="nav-link" href="#" aria-haspopup="true" aria-expanded="false">Trigun</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- The end of the Navbar -->
+
+
+    <!-- The Begining of the jumbotron -->
+    <div class="jumbotron jumbotron-fluid">
+        <video
+            poster="https://just.waffl.in/f/My%20Neighbor%20Totoro%20(Tonari%20no%20Totoro)%201988%20BRrip%201080P%20x264%20MP4%20-%20Ofek/My%20Neighbor%20Totoro.mp4"
+            preload="auto" autoplay="" loop="" muted="no">
+            <source
+                data-src="https://just.waffl.in/f/My%20Neighbor%20Totoro%20(Tonari%20no%20Totoro)%201988%20BRrip%201080P%20x264%20MP4%20-%20Ofek/My%20Neighbor%20Totoro.mp4"
+                src="https://just.waffl.in/f/My%20Neighbor%20Totoro%20(Tonari%20no%20Totoro)%201988%20BRrip%201080P%20x264%20MP4%20-%20Ofek/My%20Neighbor%20Totoro.mp4"
+                type="video/mp4">
+
+            ]
+
+        </video>
+        <div class="container text-center" style="height: 100px ;"></div>
+        <div class="text-center">
+            <a class="btn btn-primary btn-lg text-center" href="#" role="button">Learn more</a>
+            <div class="btn btn-default ld-ext-right running">
+                <div class="ld ld-loader" style="background-image:url(my-loader.gif);"></div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- The end of the jumbotron -->
+
+    <div id="gifs-appear-here"> </div>
+
+
+</body>
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+<!-- Code to the JavaScript File -->
+<script src="../GIPHY-API/assets/javascript/app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </html>
