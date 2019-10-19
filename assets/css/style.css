@@ -1,6 +1,20 @@
-/**This is Native CSS Footer*/
-footer,
-section {
+#video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-attachment: center;
+  z-index: -1;
+  background-color: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50));
+  background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50));
+  transform: translateX(-50%) translateY(-50%);
+}
+
+footer {
   padding: 50px 0;
   clear: both;
   font-size: 20px;
@@ -10,7 +24,6 @@ section {
   background: #666666;
   line-height: inherit;
 }
-
 /*This is Bulma Library Footer*/
 #hero-body{
       text-align: center;
@@ -19,19 +32,104 @@ section {
 }
 /*This is end of the Bulma Library Footer*/
 
-
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: #2196F3;
-  padding: 10px;
-  grid-column-gap: 50px;
-
+.card-image{ 
+width: 350px; 
+height: 100%;
 }
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
+
+.card-title { 
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+.carousel {
+  margin: 10px;
+  max-height: 100%;
+  min-width: 100%;
+}
+
+.btn-small{ 
+  border-radius: 20px !important; 
+  width: 10%; 
+  max-height: 100%;
   text-align: center;
+  color: black; 
+  background-color: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50));
+  background: linear-gradient(rgba(29, 4, 187, 0.29), rgba(0, 0, 0, 0.50));
 }
+
+  .vertical-align-middle { 
+    vertical-align: middle; 
+}
+
+.padding-bottom-3 {
+    padding-bottom: 3px;
+}
+
+
+ #animeForm,
+ #deleteAnime {
+   width: 100%;
+   color: ivory;
+  background: ivory;
+  border-radius: 20px; 
+ }
+
+ #animeForm label,
+ #animeForm input {
+   margin: 5px 0;
+   color: black;
+   background: white; 
+ }
+
+ input[type='submit'] {
+   font-weight: 800;
+   font-size: 1.25rem; d
+   box-shadow: 1px 2px #888888;
+   margin: auto 0;
+   border-radius: 20px;
+   linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50))
+ }
+
+ .container, body{ 
+  background-color: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50));
+  background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50));
+  border-radius: 20px !important;
+  
+ }
+
+* { 
+
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {...} 
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {...} 
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {...} 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {...} 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {...}
+  
+
+  @media #{$small-and-down} {
+    // styles for small screens and down
+  }
+  @media #{$medium-and-up} {
+    // styles for medium screens and larger
+  }
+  @media #{$medium-and-down} {
+    // styles for medium screens and down
+  }
+  @media #{$large-and-up} {
+    // styles for large screens and up
+  }
+  @media #{$extra-large-and-up} {
+    // styles for extra large screens and up
+  }
+            
+  
+  }
+  
