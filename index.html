@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +15,8 @@
 
 <body>
     <!-- The Begining of the Video -->
-    <video id='video' poster="https://just.waffl.in/f/My%20Neighbor%20Totoro%20(Tonari%20no%20Totoro)%201988%20BRrip%201080P%20x264%20MP4%20-%20Ofek/My%20Neighbor%20Totoro.mp4"
+    <video id='video'
+        poster="https://just.waffl.in/f/My%20Neighbor%20Totoro%20(Tonari%20no%20Totoro)%201988%20BRrip%201080P%20x264%20MP4%20-%20Ofek/My%20Neighbor%20Totoro.mp4"
         preload="auto" autoplay="" loop="" muted="no" height="100%" width="100%" class="responsive-video" controls>
         <source
             data-src="https://just.waffl.in/f/My%20Neighbor%20Totoro%20(Tonari%20no%20Totoro)%201988%20BRrip%201080P%20x264%20MP4%20-%20Ofek/My%20Neighbor%20Totoro.mp4"
@@ -22,32 +25,42 @@
     </video>
     <!-- The End of the Video -->
 
-                                            <div class="container center-align">
-                                        <div class="row center-align"> 
-                                <div class="carousel">
-                        </div> 
-                    <div class ='row center-align waves-effect'> 
-                <a id="buttons" class = "btn-floating btn-large red center-align"></a>
-            </div> 
+    <div class="container center-align col s12 m8 l9">
+        <div class="carousel">
+        </div>
+        <div class="row col s2 center-align">
+
+            <a id="buttons"></a>
+        </div>
+
+        <div class="row col s2 center-align">
+
+            <a id="buttons2"></a>
+        </div>
         <div id="search" class="justify-content-end row center-align'">
-                            <form id="animeForm" >
-                            <label data-position="bottom" data-tooltip="Click the add to add a Anime Gify" for="animeInput" >Add a Anime Gify!</label>
-                            <input type="text" id="animeInput"><br>
-                            <input id="addAnime" type="submit" value="Add"  class='row center-align waves-effect btn-small light-blue darken-1 tooltipped'> <br>
-                            <button for="deleteAnime" class="row center-align waves-effect btn-small light-blue darken-1 tooltipped">Delete</label> <br>
-                            <input id="delete" type="submit" value="Delete"> <br>
-                            </form>
-                    </div>
-                </div> 
-            </div> 
+            <form id="animeForm">
+                <label for="animeInput">Add a Anime Gify!</label>
+                <input type="text" id="animeInput"><br>
+                <div class="row">
+                    <input id="addAnime" type="submit" value="Add" class='waves-effect btn-small light-blue darken-1'>
+                    <br>
+                </div>
+                <div class='row'>
+                    <button for="deleteAnime" class="row waves-effect btn-small light-blue darken-1">Delete</label> <br>
+                        <input id="delete" type="submit" value="Delete"> </div> <br>
+            </form>
+
+        </div>
+    </div>
+    </div>
     </div>
 
     <!-- This is the Begining of the Footer -->
-     
-    <div class "row "> 
+
+    <div class "row">
         <section class="hero is-dark is-medium center-align">
             <div class="hero-body">
-                <h1 class="title center-align" style="color: ivory">
+                <h1 class="title center-align" style="color: ivory; border-color:black;">
                     Linkedin|Email|GitHub|Slack|Twitch|Google Drive
                     <br>
                 </h1>
@@ -65,11 +78,11 @@
                         src="assets/images/google_drive.png" width="37" height="37" alt="Google Drive"></a>
             </div>
         </section>
-                </div>
+    </div>
 
     <!-- This is the end of the Footer -->
 
-    
+
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="https://code.jquery.com/jquery.js"></script>
@@ -77,4 +90,5 @@
 <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous">
 </script>
+
 </html>
